@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="container" id="devtop">
+      <div class="jumbotron">
+        <h2>PIG DICE GAME</h2>
+        <button type="button" class="btn btn-lg btn-danger"><a href="javascript:history.go(0)" id="restart">New Game</a></button>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 displaybox" id="player1column">
+          <h3 id="displayname1">Player1</h3>
+          <form class="form-inline" id="name1input">
+            <div class="form-group">
+              <label for="player1name">Name:</label>
+              <input type="text" id="player1name">
+            </div>
+            <button type="submit" class="btn btn-default" id="submitplayer1">Start</button>
+          </form>
+          <div class="row">
+            <div class="col-sm-6 displaybox">
+              <h1>Current Roll</h1>
+              <h3><span id='currentdiceroll1'></span></h3>
+            </div>
+            <div class="col-sm-6 displaybox">
+              <h1>Turn Total</h1>
+              <h3><span id='runningturntotal1'></span></h3>
+            </div>
+          </div>
+
+          <div id='player1buttons'>
+            <button type="button" class="btn btn-info btn-lg" id="player1hold">Hold</button>
+            <button type="button" class="btn btn-danger btn-lg" id="player1roll">Roll Die</button>
+          </div>
+          <div class="row displaybox">
+            <h2>Bank:</h2>
+            <h3><span id="bank1"></span></h3>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 displaybox" id="player2column">
+          <h2 id="displayname2">Player2</h2>
+          <form class="form-inline" id="name2input">
+            <div class="form-group">
+              <label for="player2name">Name:</label>
+              <input type="text" id="player2name">
+            </div>
+            <button type="submit" class="btn btn-default" id="submitplayer2">Start</button>
+          </form>
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>Current Roll</h1>
+              <h3><span id='currentdiceroll2'></span></h3>
+            </div>
+            <div class="col-sm-6">
+              <h1>Turn Total</h1>
+              <h3><span id='runningturntotal2'></span></h3>
+            </div>
+          </div>
+          <div id='player2buttons'>
+            <button type="button" class="btn btn-info btn-lg" id="player2hold">Hold</button>
+            <button type="button" class="btn btn-danger btn-lg" id="player2roll">Roll Die</button>
+          </div>
+          <div class="row displaybox">
+            <h2>Bank:</h2>
+            <h3><span id="bank2"></span></h3>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
